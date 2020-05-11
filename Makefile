@@ -17,7 +17,6 @@ $(OUT)/test.o: test.c list.c $(OUT)/     # Meaning: target test.o depends on tes
 $(OUT)/list.o: list.c $(OUT)/   list.h #target list.o depends on list.c and indirectly on list.h	
 	gcc -o ./bin/list.o -c list.c
 clean: 
-	rm -f $(OBJFILES) $(TARGET)
-	
+	rm -r $(OUT)/
 
 
